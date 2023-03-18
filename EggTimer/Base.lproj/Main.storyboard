@@ -123,13 +123,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="568.5" width="374" height="245.5"/>
                                         <subviews>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-4S-JDM">
-                                                <rect key="frame" x="8" y="134.5" width="358" height="1.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-4S-JDM">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="246.5"/>
                                                 <color key="progressTintColor" systemColor="systemYellowColor"/>
                                                 <color key="trackTintColor" systemColor="systemGray3Color"/>
                                             </progressView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iJy-4S-JDM" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" id="Eb1-jc-IKL"/>
+                                            <constraint firstItem="iJy-4S-JDM" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="SCI-DS-sHm"/>
+                                            <constraint firstItem="iJy-4S-JDM" firstAttribute="top" secondItem="nJN-th-c5K" secondAttribute="top" id="aUv-hx-Kpc"/>
+                                            <constraint firstAttribute="bottom" secondItem="iJy-4S-JDM" secondAttribute="bottom" id="f3B-lV-BjS"/>
+                                            <constraint firstItem="iJy-4S-JDM" firstAttribute="centerX" secondItem="nJN-th-c5K" secondAttribute="centerX" id="kCY-ub-h74"/>
+                                            <constraint firstAttribute="trailing" secondItem="iJy-4S-JDM" secondAttribute="trailing" id="nO3-Wz-Y3A"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
